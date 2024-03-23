@@ -1,6 +1,6 @@
 {
   "name": "featherfront",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Lightweight and efficient frontend framework",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
