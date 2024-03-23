@@ -1,4 +1,4 @@
 const {test, test2} = require("featherfront");
 
 test()
-test2()
+test2()c
