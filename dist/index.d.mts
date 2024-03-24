@@ -1,4 +1,3 @@
-declare function test(): void;
-declare function test2(): void;
+declare function entry(nodeID: string, component: string): void;
 
-export { test, test2 };
+export { entry };

@@ -20,19 +20,15 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  test: () => test,
-  test2: () => test2
+  entry: () => entry
 });
 module.exports = __toCommonJS(src_exports);
-function test() {
-  console.log("hello world");
-}
-function test2() {
-  console.log("cuak");
+function entry(nodeID, component) {
+  const baseNode = document.getElementById(nodeID);
+  baseNode ? baseNode.innerHTML = component : console.log("f");
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  test,
-  test2
+  entry
 });
 //# sourceMappingURL=index.js.map

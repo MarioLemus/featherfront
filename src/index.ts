@@ -1,7 +1,6 @@
-export function test():void {
-    console.log("hello world")
+function entry(nodeID:string, component:string):void {
+    const baseNode = document.getElementById(nodeID)
+    baseNode ? baseNode.innerHTML = component : console.log("f");
 }
 
-export function test2():void {
-    console.log("cuak")
-}
+export { entry }

@@ -1,12 +1,9 @@
 // src/index.ts
-function test() {
-  console.log("hello world");
-}
-function test2() {
-  console.log("cuak");
+function entry(nodeID, component) {
+  const baseNode = document.getElementById(nodeID);
+  baseNode ? baseNode.innerHTML = component : console.log("f");
 }
 export {
-  test,
-  test2
+  entry
 };
 //# sourceMappingURL=index.mjs.map
